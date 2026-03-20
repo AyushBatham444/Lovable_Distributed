@@ -15,3 +15,34 @@ eureka.instance:
   hostname: localhost
   prefer-ip-address: true
   instance-id: ${spring.application.name}:${server.port}
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  health:
+    config:
+      enabled: false
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: k8s
+
+  cloud:
+    discovery:
+      enabled: false  # on k8 dont add this as a eureka client as we have kubernete kube for it
+    config.server.git:
+      uri:  https://github.com/AyushBatham444/lovable-config-server
+      username: ${GIT_USERNAME}
+      password: ${GIT_PASSWORD}
+
+eureka:
+  client:
+    enabled: false
+    register-with-eureka: false
+    fetch-registry: false

@@ -5,77 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4c5bf9b-883d-48b1-88c5-114a6d43e717" name="Changes" comment="Commit_2_Micorservices">
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/distributed_lovable/account_service/service/impl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/distributed_lovable/api_gateway/config/SecurityProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/distributed_lovable/api_gateway/error/ApiError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/distributed_lovable/api_gateway/filter/GatewayJwtAuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/distributed_lovable/api_gateway/service/JwtGatewayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/event/FileStoreRequestEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/event/FileStoreResponseEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/client/AccountClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/client/WorkspaceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/config/AiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/controller/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/dto/chat/ChatEventResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/dto/chat/ChatRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/dto/chat/ChatResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/dto/chat/StreamResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/entity/ChatEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/entity/ChatMessages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/entity/ChatSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/entity/ChatSessionId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/entity/UsageLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/llm/CodeGenerationTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/llm/FileTreeContextAdvisor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/llm/LlmResponseParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/llm/PromptUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/mapper/ChatMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/repository/ChatEventRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/repository/ChatMessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/repository/ChatSessionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/repository/UsageLogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/security/IntelligenceSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/security/SecurityExpressions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/service/AiGenerationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/service/ChatService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/service/UsageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/service/impl/AiGenerationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/service/impl/ChatServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/service/impl/UsageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/consumer/FileStorageConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/controller/InternalWorkspaceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/dto/project/DeployResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/security/SecurityExpressions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/security/WorkspaceSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/DeploymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/impl/KubernetesDeploymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/distributed_lovable/account_service/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/distributed_lovable/account_service/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/distributed_lovable/api_gateway/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/services/account-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/services/api-gateway.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/services/config-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/services/intelligence-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/services/workspace-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/stateful/kafka.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/stateful/minio.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/stateful/pgvector.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/stateful/redis.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/distributed_lovable/account_service/security/AccountSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/distributed_lovable/account_service/security/AccountSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/distributed_lovable/account_service/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/distributed_lovable/account_service/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/distributed_lovable/account_service/service/impl/StripePaymentProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/distributed_lovable/account_service/service/impl/StripePaymentProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/security/AuthUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/security/AuthUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/security/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/security/JwtAuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/security/JwtUserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/security/JwtUserPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/security/SharedSecurityAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/security/SharedSecurityAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intelligence-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/intelligence-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/IntelligenceServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/IntelligenceServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/client/AccountClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/client/AccountClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/client/WorkspaceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/client/WorkspaceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/security/IntelligenceSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/security/IntelligenceSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/security/SecurityExpressions.java" beforeDir="false" afterPath="$PROJECT_DIR$/intelligence-service/src/main/java/com/distributed_lovable/intelligence_service/security/SecurityExpressions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intelligence-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/intelligence-service/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workspace-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/controller/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/controller/ProjectMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/controller/ProjectMemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/dto/member/MemberResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/dto/member/MemberResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/dto/project/FileNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/dto/FileNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/dto/project/FileTreeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/distributed_lovable/common_lib/dto/FileTreeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/mapper/ProjectFileMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/mapper/ProjectFileMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/mapper/ProjectMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/mapper/ProjectMemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/ProjectFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/ProjectFileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/impl/ProjectFileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/impl/ProjectFileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/impl/ProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/client/AccountClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/client/AccountClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/security/WorkspaceSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/security/WorkspaceSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/impl/KubernetesDeploymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/java/com/distributed_lovable/workspace_service/service/impl/KubernetesDeploymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/workspace-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +47,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -119,38 +78,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AccountServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConfigServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.IntelligenceServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.WorkspaceServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.account-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.account-service [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.intelligence-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.intelligence-service [install].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/springboot/Lovable-Distributed/workspace-service/src/main/java/com/distributed_lovable/workspace_service/consumer&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AccountServiceApplication.executor": "Run",
+    "Application.ApiGatewayApplication.executor": "Run",
+    "Application.ConfigServiceApplication.executor": "Run",
+    "Application.DiscoveryServiceApplication.executor": "Run",
+    "Application.IntelligenceServiceApplication.executor": "Run",
+    "Application.WorkspaceServiceApplication.executor": "Run",
+    "Maven.account-service [clean].executor": "Run",
+    "Maven.account-service [install].executor": "Run",
+    "Maven.intelligence-service [clean].executor": "Run",
+    "Maven.intelligence-service [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/springboot/Lovable-Distributed/k8s",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\springboot\Lovable-Distributed\workspace-service\src\main\java\com\distributed_lovable\workspace_service\consumer" />
-      <recent name="D:\springboot\Lovable-Distributed\common-lib\src\main\java\com\distributed_lovable\common_lib\event" />
-      <recent name="D:\springboot\Lovable-Distributed\api-gateway\src\main\java\com\distributed_lovable\api_gateway\error" />
-      <recent name="D:\springboot\Lovable-Distributed\workspace-service\src\main\java\com\distributed_lovable\workspace_service\controller" />
-      <recent name="D:\springboot\Lovable-Distributed\common-lib\src\main\java\com\distributed_lovable\common_lib\dto" />
+      <recent name="D:\springboot\Lovable-Distributed\k8s" />
+      <recent name="D:\springboot\Lovable-Distributed\intelligence-service\src\main\java\com\distributed_lovable\intelligence_service\consumer" />
+      <recent name="D:\springboot\Lovable-Distributed\intelligence-service\consumer" />
+      <recent name="D:\springboot\Lovable-Distributed\workspace-service\src\main\java\com\distributed_lovable\workspace_service\repository" />
+      <recent name="D:\springboot\Lovable-Distributed\workspace-service\src\main\java\com\distributed_lovable\workspace_service\entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\springboot\Lovable-Distributed\common-lib\src\main\resources\META-INF\spring" />
@@ -227,7 +186,7 @@
       <module name="api-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.distributed_lovable.api_gateway.*" />
+          <option name="PATTERN" value="com.distributed_lovable.api_gateway.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -372,6 +331,10 @@
           </properties>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="jakarta.servlet.ServletException" package="jakarta.servlet" />
+          <option name="timeStamp" value="53" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
