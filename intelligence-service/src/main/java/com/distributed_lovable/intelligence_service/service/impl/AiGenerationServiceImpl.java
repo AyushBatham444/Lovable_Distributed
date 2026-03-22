@@ -155,16 +155,22 @@ public class AiGenerationServiceImpl implements AiGenerationService {
                 .stream()  // so we send streams not just one answer
                 .chatResponse()// has many things like tools and other info but we just need the text back
                 .doOnNext(response->{ // when on next chunk of same response
-                    String content=response.getResult().getOutput().getText(); // its like i am can be first response then ayush 2nd I am a coder will be 3rd and so on so we will keep appending these chunks to string buider below
-                    if(content != null && !content.isEmpty() && endTime.get()==0) // first non empty chunk received on doFirst u can get empty chunk as well
+
+                    if(response.getResults()!=null && !response.getResults().isEmpty())
                     {
-                        endTime.set(System.currentTimeMillis());
+                        String content=response.getResult().getOutput().getText(); // its like i am can be first response then ayush 2nd I am a coder will be 3rd and so on so we will keep appending these chunks to string buider below
+
+                        if(content != null && !content.isEmpty() && endTime.get()==0) // first non empty chunk received on doFirst u can get empty chunk as well
+                        {
+                            endTime.set(System.currentTimeMillis());
+                        }
+                        if(response.getMetadata().getUsage()!=null)
+                        {
+                            usageRef.set(response.getMetadata().getUsage());
+                        }
+                        fullResponseBuffer.append(content);
                     }
-                    if(response.getMetadata().getUsage()!=null)
-                    {
-                        usageRef.set(response.getMetadata().getUsage());
-                    }
-                    fullResponseBuffer.append(content);
+
                 })
                 .doOnComplete(()->{ // when llm stop sending text that is all chunks are received for the current response
                     Schedulers.boundedElastic().schedule(()->{ // this function creates a seperate thread to perform the below function as below function is heavy and require resources
@@ -177,8 +183,13 @@ public class AiGenerationServiceImpl implements AiGenerationService {
                 })
                 .doOnError(error->log.error("Error during Streaming for projectId {}", projectId+""+error))
                 .map(response->{
-                    String text= Objects.requireNonNull(response.getResult()).getOutput().getText();
-                    return  new StreamResponse(text != null ? text: "");
+                    if(response.getResults()!=null && !response.getResults().isEmpty())
+                    {
+                        String text= Objects.requireNonNull(response.getResult()).getOutput().getText();
+                        return  new StreamResponse(text != null ? text: "");
+                    }
+                    return new StreamResponse("");
+
                 });
 
 
